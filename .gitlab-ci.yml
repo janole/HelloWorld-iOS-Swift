@@ -1,0 +1,8 @@
+stages:
+  - build
+
+build_project:
+  stage: build
+  script:
+    - xcodebuild clean -project "Hello World.xcodeproj" -scheme "Hello World" | xcpretty
+    - xcodebuild build-for-testing -project "Hello World.xcodeproj" -scheme "Hello World" -destination 'platform=iOS Simulator,name=iPhone 6s,OS=9.2' | xcpretty -s
