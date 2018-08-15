@@ -20,6 +20,34 @@
                ReferencedContainer = "container:Hello World.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7F3898D420E0E9E000C90066"
+               BuildableName = "Hello WorldTests.xctest"
+               BlueprintName = "Hello WorldTests"
+               ReferencedContainer = "container:Hello World.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7F3898DF20E0E9E000C90066"
+               BuildableName = "Hello WorldUITests.xctest"
+               BlueprintName = "Hello WorldUITests"
+               ReferencedContainer = "container:Hello World.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,6 +56,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7F3898DF20E0E9E000C90066"
+               BuildableName = "Hello WorldUITests.xctest"
+               BlueprintName = "Hello WorldUITests"
+               ReferencedContainer = "container:Hello World.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
