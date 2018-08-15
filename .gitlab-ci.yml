@@ -5,7 +5,7 @@ stages:
 build_project:
   stage: build
   script:
-    - xcodebuild clean -project "Hello World.xcodeproj" -scheme "$SCHEME" | xcpretty
+    - xcodebuild clean -project "Hello World.xcodeproj" -scheme "${SCHEME}" | xcpretty
     - xcodebuild build-for-testing -project "Hello World.xcodeproj" -scheme "$SCHEME" -destination 'platform=iOS Simulator,name=iPhone X,OS=11.4' | xcpretty -s
 
 archive_project:
