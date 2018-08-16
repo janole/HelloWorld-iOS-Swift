@@ -14,8 +14,8 @@ archive_project:
   script:
     - xcodebuild clean archive -archivePath "build/$SCHEME" -scheme "$SCHEME" -allowProvisioningUpdates | xcpretty
 #    - xcodebuild -exportArchive -archivePath "build/Hello World.xcarchive" -exportPath "build/Hello World.ipa" -allowProvisioningUpdates -exportOptionsPlist adhoc.plist | xcpretty 
-    - mkdir -p "/Users/mini/Mac Mini/Hello World/$SCHEME/$CI_COMMIT_REF_NAME"
-    - cp -r "build/$SCHEME.xcarchive/Products/Applications/" "/Users/mini/Mac Mini/Hello World/$SCHEME/$CI_COMMIT_REF_NAME/"
+    - mkdir -p "/Users/mini/Mac Mini/Hello World/$SCHEME/$CI_COMMIT_REF_NAME-$CI_COMMIT_SHA"
+    - cp -r "build/$SCHEME.xcarchive/Products/Applications/" "/Users/mini/Mac Mini/Hello World/$SCHEME/$CI_COMMIT_REF_NAME-$CI_COMMIT_SHA/"
 #  artifacts:
 #    paths:
 #      - "build/$SCHEME.xcarchive/Products/Applications/"
